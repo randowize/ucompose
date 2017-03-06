@@ -4,8 +4,8 @@
   "description": "small functions composition utility",
   "main": "./dist/main.js",
   "scripts": {
-    "test": "nyc mocha --require test/setup.js --compilers js:babel-core/register  test/**/*.spec.js",
     "build": "babel ./src/ucompose.js --out-file ./dist/main.js",
+    "test": "nyc mocha --require test/setup.js --compilers js:babel-core/register  test/**/*.spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
