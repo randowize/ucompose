@@ -1,0 +1,9 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "linebreak-style":0
+    }
+}
