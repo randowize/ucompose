@@ -21,6 +21,11 @@ describe('`ucompose` module', () => {
   it('computes the composition of an array of functions', () => {
     const fghArr = ucompose([h, g, f]);
     const fgh = ucompose(h, g, f);
-    expect(fghArr(4)).to.eql(fgh(4));
+    expect(ucompose([4, fghArr])()).to.eql(fgh(4));
+  });
+
+  it('returns NOOP function when no function is passed as parameter', () => {
+    const fghArr = ucompose();
+    expect(fghArr(4)).to.eql(undefined);
   });
 });

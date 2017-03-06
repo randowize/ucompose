@@ -1,6 +1,7 @@
 const ucompose = (...fns) => (...args) => {
   if (fns.length <= 0) {
-    return args.length <= 1 ? args[0] : args;
+   // return args.length <= 1 ? args[0] : args;
+    return (() => {})(...args);
   }
   if (fns.length === 1) {
     const [fn, ...rest] = fns;
