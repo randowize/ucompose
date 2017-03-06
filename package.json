@@ -1,6 +1,6 @@
 {
   "name": "ucompose",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "small functions composition utility",
   "main": "./dist/main.js",
   "scripts": {
