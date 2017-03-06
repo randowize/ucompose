@@ -14,35 +14,28 @@ var ucompose = function ucompose() {
   }
 
   return function () {
-    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-      args[_key2] = arguments[_key2];
-    }
-
     if (fns.length <= 0) {
-      return args.length <= 1 ? args[0] : args;
+      // return args.length <= 1 ? args[0] : args;
+      return function () {}.apply(undefined, arguments);
     }
     if (fns.length === 1) {
-      var _fn = fns[0],
-          _rest = fns.slice(1);
+      var _fn = fns[0];
 
-      if (_rest.length === 0) {
-        switch (typeof _fn === 'undefined' ? 'undefined' : _typeof(_fn)) {
-          case 'function':
-            return _fn.apply(undefined, args);
-          case 'object':
-            {
-              return Array.isArray(_fn) ? ucompose.apply(undefined, _toConsumableArray(_fn)).apply(undefined, args) : _fn;
-            }
-          default:
-            return _fn;
-        }
+      switch (typeof _fn === 'undefined' ? 'undefined' : _typeof(_fn)) {
+        case 'function':
+          return _fn.apply(undefined, arguments);
+        case 'object':
+          {
+            return Array.isArray(_fn) ? ucompose.apply(undefined, _toConsumableArray(_fn)).apply(undefined, arguments) : _fn;
+          }
+        default:
+          return _fn;
       }
-      return ucompose.apply(undefined, _toConsumableArray(_rest))(ucompose(_fn).apply(undefined, args));
     }
     var fn = fns[0],
         rest = fns.slice(1);
 
-    return ucompose.apply(undefined, _toConsumableArray(rest))(ucompose(fn).apply(undefined, args));
+    return ucompose.apply(undefined, _toConsumableArray(rest))(ucompose(fn).apply(undefined, arguments));
   };
 };
 
