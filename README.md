@@ -1,1 +1,1 @@
-<h1 align="center">ucompose (yet another utility for function composition)</h1>
+<h1 align="center">ucompose (utility for function composition)</h1>
