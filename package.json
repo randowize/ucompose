@@ -42,8 +42,5 @@
     "include": [
       "src/**/*.js"
     ]
-  },
-  "dependencies": {
-    "babel-cli": "6.23.0"
   }
 }

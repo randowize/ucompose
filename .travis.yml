@@ -3,5 +3,5 @@ node_js:
   - "iojs"
   - "6"
 install:
-  - npm install babel-cli
+  - npm install babel-cli --save-dev
   - npm install
