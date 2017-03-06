@@ -19,3 +19,4 @@ const ucompose = (...fns) => (...args) => {
   return ucompose(...rest)(ucompose(fn)(...args));
 };
 
+export default ucompose;
