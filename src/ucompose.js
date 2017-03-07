@@ -1,3 +1,11 @@
+/* const curry = f => {
+  const arity = f.length;
+  return (...args) => {
+    if (args.length >= arity) return f(...args);
+    return curry(f.bind(null, ...args));
+  };
+};
+*/
 const ucompose = (...fns) => (...args) => {
   if (fns.length <= 0) {
    // return args.length <= 1 ? args[0] : args;
@@ -17,4 +25,4 @@ const ucompose = (...fns) => (...args) => {
   return ucompose(...rest)(ucompose(fn)(...args));
 };
 
-export default ucompose;
+module.exports = ucompose;

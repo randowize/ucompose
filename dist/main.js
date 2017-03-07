@@ -1,13 +1,17 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
+/* const curry = f => {
+  const arity = f.length;
+  return (...args) => {
+    if (args.length >= arity) return f(...args);
+    return curry(f.bind(null, ...args));
+  };
+};
+*/
 var ucompose = function ucompose() {
   for (var _len = arguments.length, fns = Array(_len), _key = 0; _key < _len; _key++) {
     fns[_key] = arguments[_key];
@@ -39,4 +43,4 @@ var ucompose = function ucompose() {
   };
 };
 
-exports.default = ucompose;
+module.exports = ucompose;
