@@ -2,6 +2,7 @@
 Utility for composing functions.
 
 [![Build Status](https://travis-ci.org/randowize/ucompose.svg?branch=master)](https://travis-ci.org/randowize/ucompose)
+[![NPM version](https://img.shields.io/npm/v/ucompose.svg)](https://www.npmjs.com/package/ucompose)
 
 
 ## Installation
