@@ -20,7 +20,7 @@ describe('`ucompose` module', () => {
 
   it('computes the composition of an array of functions', () => {
     const fghArr = ucompose([h, g, f]);
-    const fgh = ucompose(h, g, f);
+    const fgh = ucompose([h, g], [f]);
     expect(ucompose([4, fghArr])()).to.eql(fgh(4));
   });
 

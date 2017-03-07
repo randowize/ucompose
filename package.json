@@ -1,7 +1,7 @@
 {
   "name": "ucompose",
-  "version": "0.1.5",
-  "description": "small functions composition utility",
+  "version": "0.1.5-readme",
+  "description": "Utility for composing functions",
   "main": "./dist/main.js",
   "scripts": {
     "build": "babel ./src/ucompose.js --out-file ./dist/main.js",
@@ -35,6 +35,7 @@
     "eslint-config-airbnb-base": "11.1.1",
     "eslint-plugin-import": "2.2.0",
     "jsdom": "9.11.0",
+    "lerna-npm-readme-hack": "1.0.6",
     "mocha": "3.2.0",
     "nyc": "10.1.2"
   },

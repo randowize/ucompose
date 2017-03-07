@@ -6,6 +6,15 @@
   };
 };
 */
+
+
+/**
+ * Function that takes functions parameters and returns their composition
+ * @function
+ * @name ucompose
+ * @param {(string|number|boolean|Object|Array)} fns functions  to be composed
+ * @returns {function} the composition of the functions
+ */
 const ucompose = (...fns) => (...args) => {
   if (fns.length <= 0) {
    // return args.length <= 1 ? args[0] : args;
