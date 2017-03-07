@@ -63,11 +63,11 @@ function wakeUpEarly(arg){
 };
 
 function buyBread(arg) {
-    // verify
+    // buy bread
 }
 
 function buyMilk(arg) {
-    // arg
+    // buy milk
 }
 // grouping `buyBread` and `buyMilk` into a logical unit called shopping
 const shopping = [buyBread,buyMik]
