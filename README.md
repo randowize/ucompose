@@ -76,7 +76,7 @@ function payAVisitToMom(){
     // Gifts are highly appreciated
 }
 
-var yourWeekendProgram = ucompose (wakeUpEarly, shopping,payAVisitToMom );
+const yourWeekendProgram = ucompose (wakeUpEarly, shopping,payAVisitToMom );
 
 // Start your weekend
 yourWeekendProgram(You);
