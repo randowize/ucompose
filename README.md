@@ -5,7 +5,7 @@
 ```js
 var ucompose = require('ucompose');
 
-function toUpperCase(a, b) {
+function add(a, b) {
     return a+b;
 }
 
