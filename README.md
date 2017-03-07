@@ -37,7 +37,7 @@ addThenSquareThenDecorateThenLog(7, 4);
 
 ## Why (another) utility for composing functions
 
-If you are here, chances that you know what functions composition is all about are high. This small utility provides you with an intuitive way to compose your functions. If you are familiar with Ramda.js, this utily has the semantic of R.pipe since it performs a left-to-right function composition under the conditions that only the leftmost function (the first in the chain) may take any number of arguments, and the remaining functions must be unary. But where it really shines is in the fact that it gives you the ability of grouping your functions into logical units that can be composed with other functions (or logical units) later on. See [examples](#Examples) for more information.
+If you are here, chances that you know what functions composition is all about are high. This small utility provides you with an intuitive way to compose your functions. If you are familiar with Ramda.js, this utily has the semantic of R.pipe since it performs a left-to-right function composition under the conditions that only the leftmost function (the first in the chain) may take any number of arguments, and the remaining functions must be unary. But where it really shines is in the fact that it gives you the ability of grouping your functions into logical units that can be composed with other functions (or logical units) later on. See [examples](#examples) for more information.
 
 
 ## features
