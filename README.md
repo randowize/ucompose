@@ -17,7 +17,6 @@ function decorateGreaterThan100(a){
     return a>100 ? `${a} is greater than 💯` : a;
 }
 
-
 var addThenSquareThenDecorateThenLog = ucompose (add, square, decorateGreaterThan100, console.log);
 
 // print 49
