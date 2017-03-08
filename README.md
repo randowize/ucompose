@@ -7,7 +7,7 @@ Utility for composing functions.
 
 
 ## Installation
-$ `npm install ucompose --save`
+$ `npm install ucompose --save` 
 
 ## Basic Usage
 
