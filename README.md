@@ -84,3 +84,15 @@ const yourWeekendProgram = ucompose (wakeUpEarly, shopping,payAVisitToMom );
 // Start your weekend
 yourWeekendProgram(You);
 ```
+
+## Tests
+
+  First install the dependencies, then run `npm test`:
+
+```bash
+$ npm install
+$ npm test
+
+## License
+
+  [MIT](LICENSE)
