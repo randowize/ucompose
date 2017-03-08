@@ -1,12 +1,13 @@
 # ucompose
 Utility for composing functions.
 
-[![Build Status](https://travis-ci.org/randowize/ucompose.svg?branch=master)](https://travis-ci.org/randowize/ucompose)
+[![Build Status][travis-build-status]][travis-url]
 [![NPM version](https://img.shields.io/npm/v/ucompose.svg)](https://www.npmjs.com/package/ucompose)
 
 
+
 ## Installation
-$ `npm install --save ucompose`
+$ `npm install ucompose --save`
 
 ## Basic Usage
 
@@ -97,3 +98,9 @@ $ npm test
 ## License
 
   [MIT](LICENSE)
+
+
+
+
+[travis-build-status]:https://travis-ci.org/randowize/ucompose.svg?branch=master&label=linux
+[travis-url]:https://travis-ci.org/randowize/ucompose

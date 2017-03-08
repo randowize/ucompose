@@ -7,7 +7,6 @@
 };
 */
 
-
 /**
  * Function that takes functions parameters and returns their composition
  * @function
@@ -18,7 +17,7 @@
 const ucompose = (...fns) => (...args) => {
   if (fns.length <= 0) {
    // return args.length <= 1 ? args[0] : args;
-    return (() => {})(...args);
+    return (() => {})();
   }
   if (fns.length === 1) {
     const [fn] = fns;
