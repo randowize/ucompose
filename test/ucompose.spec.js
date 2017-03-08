@@ -29,3 +29,4 @@ describe('`ucompose` module', () => {
     expect(fghArr(4)).to.eql(undefined);
   });
 });
+
