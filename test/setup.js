@@ -1,5 +1,4 @@
 let jsdom = require('jsdom').jsdom;
-
 let exposedProperties = ['window', 'navigator', 'document'];
 
 global.document = jsdom('');
