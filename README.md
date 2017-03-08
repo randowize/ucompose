@@ -92,6 +92,7 @@ yourWeekendProgram(You);
 ```bash
 $ npm install
 $ npm test
+```
 
 ## License
 
